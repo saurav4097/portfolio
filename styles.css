@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0e0e12;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo-icon {
+    color: #4a90e2;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #4a90e2;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 20px;
+  }
+  
+  .arrow-btn, .scroll-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .scroll-btn {
+    background: linear-gradient(135deg, #4a90e2, #6e58e5);
+    color: white;
+  }
+  
+  .about-work {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .about, .work {
+    max-width: 400px;
+  }
+  
+  .about h3, .work h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .about p, .work p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  
+  .learn-more, .browse-portfolio {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .hero-content, .hero-image {
+      max-width: 100%;
+    }
+    
+    .about-work {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #1e1e24;
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    
+    .nav-links.show {
+      display: flex;
+    }
+    
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
