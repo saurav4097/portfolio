@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0909;
+    color:white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links a.active {
+    color: #5e9fef;
+  }
+  
+  .services-intro {
+    text-align: center;
+    padding: 50px 20px 20px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .service-card {
+    h2{color: #398cda;}
+    background: rgb(34, 33, 33);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(34, 34, 34, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .contact-me {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: #2166b5;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  .contact-info a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .hire-me-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    color: #2673d0;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .hire-me-button:hover {
+    background: #333;
+    color: white;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background: #111;
+    color: #aaa;
+  }
+  

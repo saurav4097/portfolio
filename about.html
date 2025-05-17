@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">&lt;/&gt; Saurav</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About Me</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="skills.html" >Skills</a></li>
+  </ul>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/saurav.jpeg" alt="Saurav Photo" class="profile-img">
+    <h1>Hello, I'm <span>Saurav</span></h1>
+    <p class="animated-text">Creator. Innovator. Dreamer.</p>
+  </div>
+</section>
+
+<section class="story">
+  <h2>My Journey</h2>
+  <p>
+    Since childhood, I’ve been endlessly curious — drawn toward art, sports, technology, and leadership. 
+    Math always felt like a natural playground, even when everything else seemed distant.
+    <br><br>
+    While the world focused on the usual paths, I explored new ideas, startups, creativity, and innovation. 
+    I don't just follow trends — I chase passions, build dreams, and create my own way forward.
+  </p>
+</section>
+
+<section class="hobbies">
+  <h2>My Passions</h2>
+  <div class="hobbies-grid">
+    <div class="hobby-card">🏊‍♂️ Swimming</div>
+    <div class="hobby-card">🏋️‍♂️ Weightlifting</div>
+    <div class="hobby-card">💻 Technology & Coding</div>
+    <div class="hobby-card">📚 Reading Books</div>
+    <div class="hobby-card">🎵 Listening to Music</div>
+    <div class="hobby-card">🧠 Thinking New Ideas</div>
+    <div class="hobby-card">🔬 Analyzing & Building</div>
+    <div class="hobby-card">🎥 Modeling & Photoshoots</div>
+    <div class="hobby-card">🎨 Painting & Drawing</div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Let's Connect</h2>
+  <p>Feel free to reach out if you want to work together, create something amazing, or just say hi!</p>
+  
+  <div class="contact-info">
+    <p>📧 saurav18s08@gmail.com</p>
+    <p>📧 saurav018ss@gmail.com</p>
+    <a href="https://www.linkedin.com/in/saurav-choudhary-78361b2a5" target="_blank" class="linkedin-btn">Visit my LinkedIn</a>
+  </div>
+</section>
+
+<script>
+    const animatedText = document.querySelector('.animated-text');
+const messages = ["Creator. Innovator. Dreamer.", "Think Different.", "Build Different."];
+
+let index = 0;
+
+setInterval(() => {
+  animatedText.textContent = messages[index];
+  index = (index + 1) % messages.length;
+}, 3000);
+
+</script>
+</body>
+</html>
